@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --star-gold : #FFCE3E;
     --border-color : #dbdbdb ; 
     --header-height : 120px;
     --navbar-height : 26px;
@@ -62,6 +63,13 @@ html {
     margin-right: -6px;
 }
 
+.grid__row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
 .grid__colum-2 {
     padding-left: 6px;
     padding-right: 6px;
@@ -74,13 +82,13 @@ html {
     width: 83.3333%;
 }
 
-.grid__colum-2-10 {
+.grid__colum-2-4 {
     padding-left: 6px;
     padding-right: 6px;
     width: 20%;
 }
 
-.grid__row-2-10 {
+.grid__row-2-4 {
     display: flex;
     flex-wrap: wrap;
     margin-left: -6px;
@@ -155,17 +163,33 @@ html {
     margin-left: 8px;
 }
 
-.item-icon-heart--active {
-    color: red !important;
+.body-page-number {
+   margin: auto ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-.item-icon-star--active {
-    color: #FFCE3E !important;
+/* pagination */
+
+.page-number {
+    --height : 30px; 
+    font-size: 2rem;
+    text-decoration: none;
+    color: #939393;
+    min-width: 40px;
+    display: block;
+    height: var(--height);
+    margin: 0 12px;
+    line-height: var(--height);
+    text-align: center;
+    font-weight: 300;
 }
 
 .page-current {
     background-color: var(--primary-color);
-    color: var(--white-color) !important;
+    color: var(--white-color) ;
+    border-radius: 2px;
 }
 
 .page-current:hover {
@@ -175,6 +199,7 @@ html {
 .page-icon {
     font-weight: 1000 !important;
 }
+
 
 /* Animation */
 
@@ -212,22 +237,4 @@ html {
     }
 }
 
-@keyframes TranformRight {
-    from {
-        transform: translateX(0);
-    }
 
-    to {
-        transform: translateX(10px);
-    }
-}
-
-@keyframes TranformTop {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-3px);
-    }
-}
