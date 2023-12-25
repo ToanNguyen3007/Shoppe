@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+}
+.sidebar {
+    background-color: #ccc;
+    width: 300px;
+}
+
+.item {
+    width: 100%;
+}
+
+.hang {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin-bottom: 8px;
+}
+
+
+@media (max-width: 739px)  {
+    .sidebar {
+        display: none;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .sidebar {
+        display: none;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
