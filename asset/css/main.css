@@ -906,9 +906,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.header__cart-wrap:hover  .header__below-cart-detail {
-    display: block;
-}
 
 .header__below-cart-detail {
     position: absolute;
